@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TypedWorkflowAnalyzer": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\TypedWorkflowNext\\TypedWorkflowNext.csproj"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<LangVersion>9.0</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Analyzer Include="..\TypedWorkflowAnalyzer\bin\Debug\netstandard2.0\TypedWorkflowAnalyzer.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\SampleComponents\SampleComponents.csproj">
+	    <Aliases>MyComponents,MySampleComponents</Aliases>
+	  </ProjectReference>
+	  <ProjectReference Include="..\TypedWorkflow\TypedWorkflow.csproj" />
+	</ItemGroup>
+
+</Project>
